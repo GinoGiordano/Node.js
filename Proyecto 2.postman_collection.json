@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "62578093-ae2f-417f-9396-a25229cffbcb",
+		"name": "Proyecto 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Variedades",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ginogiordano-servicio-web.herokuapp.com/variety",
+					"protocol": "https",
+					"host": [
+						"ginogiordano-servicio-web",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"variety"
+					]
+				},
+				"description": "Se obtienen todas las variedades disponibles"
+			},
+			"response": []
+		},
+		{
+			"name": "Variedad/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ginogiordano-servicio-web.herokuapp.com/variety/1",
+					"protocol": "https",
+					"host": [
+						"ginogiordano-servicio-web",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"variety",
+						"1"
+					]
+				},
+				"description": "Se obtiene un variedad en base a la id ingresada"
+			},
+			"response": []
+		},
+		{
+			"name": "Coffees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ginogiordano-servicio-web.herokuapp.com/coffee",
+					"protocol": "https",
+					"host": [
+						"ginogiordano-servicio-web",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"coffee"
+					]
+				},
+				"description": "Se obtiene todos los cafe disponibles"
+			},
+			"response": []
+		},
+		{
+			"name": "Coffee/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ginogiordano-servicio-web.herokuapp.com/coffee/2",
+					"protocol": "https",
+					"host": [
+						"ginogiordano-servicio-web",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"coffee",
+						"2"
+					]
+				},
+				"description": "Se obtiene un cafe en especifico"
+			},
+			"response": []
+		},
+		{
+			"name": "Coffee/id/imagen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ginogiordano-servicio-web.herokuapp.com/coffee/2/imagen",
+					"protocol": "https",
+					"host": [
+						"ginogiordano-servicio-web",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"coffee",
+						"2",
+						"imagen"
+					]
+				},
+				"description": "Se obtiene la imagen de un cafe en especifico"
+			},
+			"response": []
+		},
+		{
+			"name": "Publications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ginogiordano-servicio-web.herokuapp.com/publication",
+					"protocol": "https",
+					"host": [
+						"ginogiordano-servicio-web",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"publication"
+					]
+				},
+				"description": "Se obtiene todas las publicaciones disponibles"
+			},
+			"response": []
+		},
+		{
+			"name": "Publication/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ginogiordano-servicio-web.herokuapp.com/publication/2",
+					"protocol": "https",
+					"host": [
+						"ginogiordano-servicio-web",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"publication",
+						"2"
+					]
+				},
+				"description": "Se obtiene una publicacion en especifica"
+			},
+			"response": []
+		},
+		{
+			"name": "Publication/id/image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ginogiordano-servicio-web.herokuapp.com/publication/2/image",
+					"protocol": "https",
+					"host": [
+						"ginogiordano-servicio-web",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"publication",
+						"2",
+						"image"
+					]
+				},
+				"description": "Se obtiene la imagen de una publicacion en especifica"
+			},
+			"response": []
+		}
+	]
+}
