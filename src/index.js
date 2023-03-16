@@ -30,7 +30,7 @@ const options = {
       },
       servers: [
         {
-          url: "https://ginogiordano-servicio-web.herokuapp.com/",
+          url: "https://node-js-ginogiordano.vercel.app/",
         },
       ],
     },
