@@ -35,7 +35,7 @@ const getCoffees = async (req, res)=> {
     const response = await pool.query('SELECT * FROM coffees');
     for (let i = 0; i <  response.rows.length; i++) {
         if(response.rows[i].image){
-        response.rows[i].image = 'https://ginogiordano-servicio-web.herokuapp.com/coffee/'+ response.rows[i].id+'/imagen';
+        response.rows[i].image = 'https://node-js-ginogiordano.vercel.app/coffee/'+ response.rows[i].id+'/imagen';
         }   
     }
     res.status(200).json(response.rows);
