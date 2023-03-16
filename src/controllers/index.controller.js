@@ -67,7 +67,7 @@ const getCoffeeById = async (req, res)=> {
         if(response.rows.length == 0){
             res.status(404).json(); 
          }else{
-         response.rows[0].image = 'https://ginogiordano-servicio-web.herokuapp.com/coffee/'+id+'/imagen';
+         response.rows[0].image = 'https://node-js-ginogiordano.vercel.app/coffee/'+id+'/imagen';
          res.status(200).json(response.rows);
          }
     }else{
@@ -80,7 +80,7 @@ const getPublications = async (req, res)=> {
     const response = await pool.query('SELECT * FROM publications');
     for (let i = 0; i <  response.rows.length; i++) {
         if(response.rows[i].image){
-        response.rows[i].image = 'https://ginogiordano-servicio-web.herokuapp.com/publication/'+ response.rows[i].id+'/image';
+        response.rows[i].image = 'https://node-js-ginogiordano.vercel.app/publication/'+ response.rows[i].id+'/image';
         }   
     }
     res.status(200).json(response.rows);
@@ -109,7 +109,7 @@ const getPublicationById = async (req, res)=> {
         if(response.rows.length == 0){
             res.status(404).json(); 
          }else{
-         response.rows[0].image = 'https://ginogiordano-servicio-web.herokuapp.com/publication/'+id+'/image';
+         response.rows[0].image = 'https://node-js-ginogiordano.vercel.app/publication/'+id+'/image';
          res.status(200).json(response.rows);
          }
     }else{
