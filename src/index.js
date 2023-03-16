@@ -8,9 +8,13 @@ app.use(cors());
 const morgan = require('morgan')
 
 
+
+
+app.use(morgan('dev'))
+
 //routes
  app.use(require('./routes/index'));
-
+ console.log('Server on port')
  //middleware
  app.use(express.json());
  app.use(express.urlencoded({extended:false}));
